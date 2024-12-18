@@ -3,18 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games Menu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Menu</title>
+    <style>
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .menu {
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .menu h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #f8f9fa;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .button {
+        text-decoration: none;
+        padding: 15px 30px;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 30px;
+        color: #ffffff;
+        background: linear-gradient(90deg, #4facfe, #00f2fe);
+        box-shadow: 0 3px 10px rgba(0, 242, 254, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 242, 254, 0.5);
+    }
+
+    .button:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 10px rgba(0, 242, 254, 0.3);
+    }
+    </style>
 </head>
 <body>
-    <div class="menu-container">
-        <h1 class="title">Choose Your Game</h1>
-        <div class="game-buttons">
-            <a href="https://salfetka228-tech.github.io/Mtonik/" class="game-button">Mines</a>
-            <a href="https://salfetka228-tech.github.io/cointonik/" class="game-button">CoinFlip</a>
-            <a href="https://salfetka228-tech.github.io/steptonik/" class="game-button">TowerStep</a>
-            <a href="https://cehbr3fqqfmst.com/0yaF" class="button">Get Luck</a>
-        </div>
+    <div class="menu">
+        <h1>Game Menu</h1>
+        <a href="https://salfetka228-tech.github.io/Mtonik/" class="button">Play Mines</a>
+        <a href="https://salfetka228-tech.github.io/cointonik/" class="button">Play CoinFlip</a>
+        <a href="https://salfetka228-tech.github.io/steptonik/" class="button">Play TowerStep</a>
+        <a href="https://cehbr3fqqfmst.com/0yaF" class="button">Get Luck</a>
     </div>
 </body>
 </html>
